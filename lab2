@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include "math.h"
+int main() {
+    float pi = 3.14159265359; // Объявляем переменную pi
+    int a; // Объявляем переменную а
+    scanf("%d", &a); // Вводим число а
+    float z1 = sin(a) + cos(a) + cos(3*a) + sin(2*a);
+    float z2 = 2 * sqrt(2) * cos(a) * sin((pi/4)+2*a);
+    printf("%f\n", z1); // выводим значение первой функции
+    printf("%f", z2); // выводим значение второй функции
+    return 0;
+}
